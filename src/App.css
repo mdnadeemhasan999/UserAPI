@@ -1,0 +1,83 @@
+:root {
+    --primary: #1e90ff;
+    --secondary: #54bb7f;
+    --background: rgb(150, 146, 146);
+    --white: #fff;
+    --grey: rgb(150, 146, 146);
+    --black: #495057;
+    --red: rgb(236, 41, 41);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app {
+    background-color: var(--background);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .app-content {
+    min-height: 80vh;
+    background-color: var(--white);
+    border-radius: 10px;
+    margin: 25px 0;
+    min-width: 60%;
+  }
+
+  .heading {
+    border-bottom: 1px solid var(--black);
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    color: var(--secondary);
+  }
+
+  .page-not-found {
+    text-align: center;
+    font-size: 24px;
+    color: var(--red);
+    margin: 50px 0;
+  }
+
+  .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+
+  .page-no {
+    margin: auto !important;
+  }
+
+  @media only screen and (max-width: 999px) {
+    .app-content {
+      min-width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 776px) {
+    .app-content {
+      min-width: 95%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .app-content {
+      min-width: 100%;
+      border-radius: 0;
+      margin: 0;
+    }
+    .MuiGrid-container {
+      flex-wrap: nowrap !important;
+    }
+    .makeStyles-paper-2 {
+      max-width: 85% !important;
+    }
+  }
